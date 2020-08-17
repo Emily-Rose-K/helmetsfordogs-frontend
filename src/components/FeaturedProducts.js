@@ -6,14 +6,14 @@ export default function FeaturedProducts() {
         <div>
             <Row >
                 <Col> 
-                    <Image src="/blue.png" alt="Minpin wearing a blue helmet." width="171" height="180" />
-                    <Image src="/blue.png" alt="Minpin wearing a blue helmet." width="171" height="180" /> 
+                    <Image className="m-5" src="/blue.png" alt="Minpin wearing a blue helmet." width="171" height="180" />
+                    <Image className="m-5" src="/blue.png" alt="Minpin wearing a blue helmet." width="171" height="180" /> 
                 </Col>
             </Row>
             <Row >
                 <Col> 
-                    <Image src="/blue.png" alt="Minpin wearing a blue helmet." width="171" height="180" />
-                    <Image src="/blue.png" alt="Minpin wearing a blue helmet." width="171" height="180" /> 
+                    <Image className="m-5" src="/blue.png" alt="Minpin wearing a blue helmet." width="171" height="180" />
+                    <Image className="m-5"src="/blue.png" alt="Minpin wearing a blue helmet." width="171" height="180" /> 
                 </Col>
             </Row>
         </div>
