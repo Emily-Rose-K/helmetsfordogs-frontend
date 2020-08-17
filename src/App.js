@@ -4,6 +4,15 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import Home from './components/Home'
 import Login from './components/registrations/Login'
 import Signup from './components/registrations/Signup'
+import Shop from './components/Shop'
+import Gallery from './components/Gallery'
+import Navbar from './components/Navbar';
+import Banner from './components/Banner';
+
+
+
+
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -41,6 +50,8 @@ handleLogout = () => {
 render() {
     return (
       <div>
+        <Navbar />
+        <Banner />
         <BrowserRouter>
           <Switch>
             <Route 
@@ -61,6 +72,12 @@ render() {
               <Signup {...props} handleLogin={this.handleLogin} loggedInStatus={this.state.isLoggedIn}/>
               )}
             />
+            <Route 
+              exact path='/shop'><Shop />
+            </Route>
+            <Route 
+              exact path='/gallery'><Gallery />
+            </Route>
           </Switch>
         </BrowserRouter>
       </div>
