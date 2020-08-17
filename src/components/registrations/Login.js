@@ -23,7 +23,7 @@ handleChange = (event) => {
 handleSubmit = (event) => {
     event.preventDefault()
     const {username, email, password} = this.state
-let user = {
+    let user = {
       username: username,
       email: email,
       password: password
@@ -101,4 +101,4 @@ return (
     );
   }
 }
-export default Login;
+export default Login;   
