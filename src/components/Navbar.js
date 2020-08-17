@@ -16,6 +16,9 @@ const handleClick = () => {
         <div>
             <Nav className="justify-content-end" activeKey="/home">
                 <Nav.Item>
+                    <Nav.Link href="/">Home</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
                     <Nav.Link href="/login">Log In</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
