@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import Nav from 'react-bootstrap/Nav'
 
 const axios = require('axios').default;
 const Navbar = (props) => {
@@ -11,26 +11,35 @@ const handleClick = () => {
     })
     .catch(error => console.log(error))
   }
-return (
-   
-    <div>
-      <Link to='/login'>Log In</Link>
-      <br></br>
-      <Link to='/signup'>Sign Up</Link>
-      <br></br>
-      <Link to='/gallery'>Gallery</Link>
-      <br></br>
-      <Link to='/products'>Shop</Link>
-      <br></br>
-      <Link to='/account'>My Account</Link>
-      <br></br>
-      { 
-        props.loggedInStatus ? 
-        <Link to='/logout' onClick={handleClick}>Log Out</Link> : 
-        null
-      }
-    </div>
-  );
+
+  return (  
+        <div>
+            <Nav className="justify-content-end" activeKey="/home">
+                <Nav.Item>
+                    <Nav.Link href="/login">Log In</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="/signup">Sign Up</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="/gallery">Gallery</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="/shop">Shop</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="/myAccount">My Account</Nav.Link>
+                </Nav.Item>
+                { 
+                    props.loggedInStatus ? 
+                    <Nav.Item>
+                        <Nav.Link href="/logout" onClick={handleClick} >Logout</Nav.Link> 
+                    </Nav.Item> :
+                    null
+                }
+            </Nav>
+        </div>
+    )      
 };
 
 export default Navbar;
