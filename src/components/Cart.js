@@ -4,21 +4,20 @@ import MyItems from './MyItems'
 import {Container, Col,  Row} from 'react-bootstrap'
 
 
-export default function Cart(props) {
+export default function Cart() {
     return (
         <Container>
             <Row>
-                <Col className="m-3">
+                <Col className="mt-5">
                     <MyItems/>
                     <p> $2 </p>
-                </Col>
-            </Row>
-            <Row >
-                <Col md={{ span: 4, offset: 4 }}>
                     <p>Your Total is: $2</p>
+                </Col>
+                <Col className="mt-5">
                     <CheckoutForm />    
                 </Col>
             </Row>
+
         </Container>
     )
 }

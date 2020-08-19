@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios'
+import {Link} from 'react-router-dom'
+
 class Signup extends Component {
   constructor(props) {
     super(props);
@@ -54,8 +56,12 @@ handleErrors = () => {
 render() {
     const {username, email, password, password_confirmation} = this.state
 return (
-      <div>
-        <h1>Sign Up</h1>
+      <div
+        style={{
+          position: 'absolute', left: '50%', top: '50%',
+          transform: 'translate(-50%, -50%)'
+        }} 
+      >
         <form onSubmit={this.handleSubmit}>
           <input
             placeholder="username"
@@ -89,7 +95,9 @@ return (
           <button placeholder="submit" type="submit">
             Sign Up
           </button>
-      
+          <div>
+            already have an account? <Link to='/login'>login</Link>
+          </div>
         </form>
         <div>
           {

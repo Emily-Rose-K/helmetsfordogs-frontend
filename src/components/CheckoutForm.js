@@ -108,7 +108,7 @@ export default function CheckoutForm() {
           </a> Refresh the page to pay again.
         </p>
       </form>
-      <Button href="/shop">Continue Shopping</Button>
+      <Button className="mt-5" href="/shop">Continue Shopping</Button>
     </Container>
   );
 }
