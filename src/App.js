@@ -10,7 +10,7 @@ import Navbar from './components/Navbar';
 import Banner from './components/Banner';
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
-import CheckoutForm from './components/CheckoutForm';
+import Cart from './components/Cart';
 import "./App.css";
 
 
@@ -22,7 +22,8 @@ class App extends Component {
     super(props);
     this.state = { 
       isLoggedIn: false,
-      user: {}
+      user: {},
+      total: 0
      };
   }
 componentDidMount() {
@@ -51,10 +52,17 @@ handleLogout = () => {
     user: {}
     })
   }
+
+  calculateTotal = (x) => {
+   this.setState({
+     total: parseInt(this.total) + x
+    })
+}
+
 render() {
     return (
       <div>
-        <Navbar />
+        <Navbar handleLogout={this.handleLogout} loggedInStatus={this.state.isLoggedIn} />
         <Banner />
         <BrowserRouter>
           <Switch>
@@ -77,7 +85,7 @@ render() {
               )}
             />
             <Route 
-              exact path='/shop'><Shop />
+              exact path='/shop'><Shop calculateTotal={this.calculateTotal} total={this.state.total}/>
             </Route>
             <Route 
               exact path='/gallery'><Gallery />
@@ -85,7 +93,7 @@ render() {
             <Route
             exact path='/checkout'> 
               <Elements stripe={promise}>
-                <CheckoutForm />
+                <Cart total={this.state.total}/>
               </Elements>
             </Route>
           </Switch>

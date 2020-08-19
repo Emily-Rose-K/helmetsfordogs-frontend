@@ -4,6 +4,7 @@ import {
   useStripe,
   useElements
 } from "@stripe/react-stripe-js";
+import { findByLabelText } from "@testing-library/react";
 
 
 export default function CheckoutForm() {
@@ -75,6 +76,7 @@ export default function CheckoutForm() {
     }
   };
   return (
+    <>
     <form id="payment-form" onSubmit={handleSubmit}>
       <CardElement id="card-element" options={cardStyle} onChange={handleChange} />
       <button
@@ -106,5 +108,7 @@ export default function CheckoutForm() {
         </a> Refresh the page to pay again.
       </p>
     </form>
+    <a href="/shop" className="button">Continue Shopping</a>
+    </>
   );
 }
