@@ -8,8 +8,16 @@ export default function Cart(props) {
     return (
         <Container>
             <Row>
-                <MyItems total={props.total} />
-                <CheckoutForm />    
+                <Col className="m-3">
+                    <MyItems/>
+                    <p> $2 </p>
+                </Col>
+            </Row>
+            <Row >
+                <Col md={{ span: 4, offset: 4 }}>
+                    <p>Your Total is: $2</p>
+                    <CheckoutForm />    
+                </Col>
             </Row>
         </Container>
     )
