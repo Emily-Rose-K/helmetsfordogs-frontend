@@ -14,7 +14,7 @@ import Cart from './components/Cart';
 import "./App.css";
 
 
-const promise = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
+const promise = loadStripe("pk_test_51HHZvaAiIJqyPXJ3dDsOQBn4DqHbWPqUgEbaMEF12pWAs9M9wDTMpMWdmUxXRxl1Tsc45jGH7ipRoLGhNsTnidVa00x7WhaETB");
 
 
 class App extends Component {

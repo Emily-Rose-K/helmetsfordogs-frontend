@@ -12,7 +12,7 @@ export default function Gallery() {
                 <Col>
                     <h3> Elegance ✨ Nov 2019 </h3>
                     <p> Featuring Babe, a three-year-old miniature pinscher sunbathing in a charming edwardian home in San Francisco's Noe Valley.
-                        The picture was taken by Deanna Glory. Glory, who has a fondness for Cockapoo's, was able to portray Babe's chocolate and coat in 
+                        The picture was taken by Deanna Glory. Glory, who has a fondness for Cockapoo's, was able to portray Babe's chocolate coat in 
                         the most elegant fashion. </p>
                 </Col>
             </Row>
