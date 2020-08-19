@@ -10,7 +10,7 @@ export default function Metal(props) {
             <Row>
                 <Col>
                 <Image src="/metal.jpg" alt="metal helmet"  width="171" height="180" />
-                    <p>Metal helmet $7</p> <AddToCart />
+                    <p>Metal helmet $7</p> <AddToCart price={7}/>
                 </Col>
             </Row>
         </Container>

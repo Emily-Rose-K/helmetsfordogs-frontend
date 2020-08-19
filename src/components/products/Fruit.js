@@ -9,7 +9,7 @@ export default function Fruit(props) {
             <Row>
                 <Col>
                     <Image src="/grapefruit.jpg" alt=" grapefruit helmet" width="171" height="180" />
-                    <p>Grapefruit helmet $2</p> <AddToCart />
+                    <p>Grapefruit helmet $2</p> <AddToCart price={2} />
                 </Col>
             </Row>
         </Container>

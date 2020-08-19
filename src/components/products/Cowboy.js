@@ -9,7 +9,7 @@ export default function Cowboy() {
             <Row>
                 <Col className="m-3">
                     <Image src="/giles-cowboy.jpg" alt="cowboy hat" width="171" height="180" />
-                    <p>Cowboy helmet $8</p> <AddToCart />
+                    <p>Cowboy helmet $8</p> <AddToCart price={8}/>
                 </Col>
             </Row>
         </Container>

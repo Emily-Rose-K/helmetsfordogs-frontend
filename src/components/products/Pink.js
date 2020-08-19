@@ -9,7 +9,7 @@ export default function Pink() {
             <Row>
                 <Col>
                     <Image src="/pink.jpg" alt="pink helmet"  width="171" height="180" />
-                    <p>Pink helmet $3</p> <AddToCart />
+                    <p>Pink helmet $3</p> <AddToCart price={3} />
                 </Col>
             </Row>
         </Container>

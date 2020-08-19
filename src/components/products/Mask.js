@@ -8,7 +8,7 @@ export default function Mask() {
             <Row>
                 <Col>
                 <Image src="/covid-helmet.jpg" alt="covid19 mask" width="171" height="180" />
-                    <p>Mask helmet $7</p> <AddToCart />
+                    <p>Mask helmet $7</p> <AddToCart price={7}/>
                 </Col>
             </Row>
         </Container>

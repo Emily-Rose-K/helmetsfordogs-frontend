@@ -9,7 +9,7 @@ export default function Blue() {
             <Row>
                 <Col>
                     <Image src="/blue.png" alt="blue helmet"  width="171" height="180" />
-                    <p>Blue helmet $3</p> <AddToCart />
+                    <p>Blue helmet $3</p> <AddToCart price={3}/>
                 </Col>
             </Row>
         </Container>
