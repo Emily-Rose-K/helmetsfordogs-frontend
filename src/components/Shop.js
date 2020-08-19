@@ -1,5 +1,5 @@
 import React from 'react'
-import {Image, Container, Col,  Row} from 'react-bootstrap'
+import {Container, Col,  Row} from 'react-bootstrap'
 import Fruit from './products/Fruit'
 import Bear from './products/Bear'
 import Blue from './products/Blue'

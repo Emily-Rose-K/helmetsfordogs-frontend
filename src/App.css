@@ -89,6 +89,10 @@ input {
   margin-bottom: 32px;
 }
 
+#login {
+  text-align: center;
+}
+
 /* Buttons and links */
 button {
   background: #5469d4;
