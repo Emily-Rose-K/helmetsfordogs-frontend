@@ -8,9 +8,13 @@ import Shop from './components/Shop'
 import Gallery from './components/Gallery'
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
+import { loadStripe } from "@stripe/stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
+import CheckoutForm from './components/CheckoutForm';
+import "./App.css";
 
 
-
+const promise = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
 
 
 class App extends Component {
@@ -77,6 +81,12 @@ render() {
             </Route>
             <Route 
               exact path='/gallery'><Gallery />
+            </Route>
+            <Route
+            exact path='/checkout'> 
+              <Elements stripe={promise}>
+                <CheckoutForm />
+              </Elements>
             </Route>
           </Switch>
         </BrowserRouter>
