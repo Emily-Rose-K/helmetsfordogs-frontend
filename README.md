@@ -7,26 +7,26 @@ Check out the backend repo: [helmetsfordogs-api](https://github.com/Emily-Rose-K
 
 ### Features
 
-MVP:
-Sign in/Login/Logout functionality ✔️
-Featured Gallery and Products on Home page ✔️
-Gallery with posts of cute dogs ✔️
-Shop where you can add items to your cart (it's there, it doesn't work exactly as planned)
-Checkout page implemented with stripe  (it's there, it doesn't work exactly as planned)
+### MVP:
+* Sign in/Login/Logout functionality ✔️
+* Featured Gallery and Products on Home page ✔️
+* Gallery with posts of cute dogs ✔️
+* Shop where you can add items to your cart (it's there, it doesn't work exactly as planned)
+* Checkout page implemented with stripe  (it's there, it doesn't work exactly as planned)
 
-### Tech used
+## Tech used
 
 The front end was built wiht React.js and react-bootstrap
 Stripe was used for the payment services
 
-### WireFrames
-![Home](/landing.png)
-![Shop](/shop.png)
-![Gallery](/gallery.png)
-!Checkout(/checkout.png)
+## WireFrames
+![Home](public/landing.png)
+![Shop](public/shop.png)
+![Gallery](public/gallery.png)
+![Checkout](public/checkout.png)
 
 ## Future Goals
 
-I do want to actually create the functionality to add items to the cart, remove them from your cart, and save your cart when you log out and back in again.
-I also want to get stripe working as it should.
-Finally, I'd like to get the styling looking sharp.
+* I do want to actually create the functionality to add items to the cart, remove them from your cart, and save your cart when you log out and back in again.
+* I also want to get stripe working as it should.
+* Finally, I'd like to get the styling looking sharp.
